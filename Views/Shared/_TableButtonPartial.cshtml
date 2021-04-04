@@ -1,0 +1,12 @@
+﻿@model int
+
+<td class="text-right">
+    <div class="btn-group">
+        @*@Url.Action("Delete", "Make", new { id = item.Id })*@
+        <form method="post" action="Delete">
+            <a type="button" class="btn btn-primary" asp-action="Edit" asp-route-id="@Model"><i class="far fa-edit"></i></a>
+            <button type="submit" class="btn btn-danger" asp-action="Delete" asp-route-id="@Model"> <i class="fas fa-trash-alt"></i></button>
+        </form>
+
+    </div>
+</td>
