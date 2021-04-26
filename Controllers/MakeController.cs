@@ -4,9 +4,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Bike.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Bike.Controllers
 {
+
+    [Authorize(Roles ="Admin,Executive")]
     public class MakeController : Controller
     {
         private readonly VroomDbContext _db;

@@ -1,5 +1,6 @@
 ﻿using Bike.Models;
 using Bike.Models.ViewModel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -9,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace Bike.Controllers
 {
+    [Authorize(Roles = "Admin,Executive")]
     public class ModelController : Controller
     {
         private readonly VroomDbContext _db;

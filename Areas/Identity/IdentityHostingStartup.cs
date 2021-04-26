@@ -15,6 +15,11 @@ namespace Bike.Areas.Identity
         public void Configure(IWebHostBuilder builder)
         {
             builder.ConfigureServices((context, services) => {
+
+                services.AddDbContext<VroomDbContext>(options =>
+                    options.UseSqlServer(
+                        context.Configuration.GetConnectionString("Default")));
+
             });
         }
     }

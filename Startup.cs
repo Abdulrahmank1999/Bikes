@@ -25,8 +25,10 @@ namespace Bike
                 (options=>options.UseSqlServer(Configuration.GetConnectionString("Default")));
             services.AddControllersWithViews();
             services.AddRazorPages();
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-        .AddEntityFrameworkStores<VroomDbContext>(); 
+            services.AddIdentity<IdentityUser, IdentityRole>()
+        .AddEntityFrameworkStores<VroomDbContext>().AddDefaultUI().AddDefaultTokenProviders();
+        
+        ; 
            // services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<ApplicationDbContext>();
         }
 

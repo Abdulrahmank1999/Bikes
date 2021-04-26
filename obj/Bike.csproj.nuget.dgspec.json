@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "A:\\Project\\Bike\\Bike\\Bike.csproj": {}
+    "A:\\Project\\Pratice\\Bike\\Bike\\Bike.csproj": {}
   },
   "projects": {
-    "A:\\Project\\Bike\\Bike\\Bike.csproj": {
+    "A:\\Project\\Pratice\\Bike\\Bike\\Bike.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\Project\\Bike\\Bike\\Bike.csproj",
+        "projectUniqueName": "A:\\Project\\Pratice\\Bike\\Bike\\Bike.csproj",
         "projectName": "Bike",
-        "projectPath": "A:\\Project\\Bike\\Bike\\Bike.csproj",
+        "projectPath": "A:\\Project\\Pratice\\Bike\\Bike\\Bike.csproj",
         "packagesPath": "C:\\Users\\ABD0172788\\.nuget\\packages\\",
-        "outputPath": "A:\\Project\\Bike\\Bike\\obj\\",
+        "outputPath": "A:\\Project\\Pratice\\Bike\\Bike\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ABD0172788\\AppData\\Roaming\\NuGet\\NuGet.Config",
